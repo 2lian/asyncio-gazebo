@@ -5,6 +5,7 @@ from contextlib import suppress
 from typing import List, Optional, TypeVar
 
 import asyncio_for_robotics as afor
+import numpy as np
 import posetree
 import transforms_py._core as tp
 from asyncio_for_robotics.core._logger import setup_logger
@@ -106,6 +107,9 @@ class TfBufferSub(afor.BaseSub[List[str]]):
         self.raw_sub.close()
         super().close()
 
+    def subscribe_to_tf(self, parent: str, child: str):
+        return TfSub(parent, child, self)
+
 
 class TfSub(afor.BaseSub[posetree.Transform]):
     def __init__(self, parent: str, child: str, buffer_sub: TfBufferSub) -> None:
@@ -116,8 +120,21 @@ class TfSub(afor.BaseSub[posetree.Transform]):
         self._loop_task = asyncio.create_task(self._loop())
 
     async def _loop(self):
+        prev = None
         async for _ in self.buffer_sub.listen_reliable(queue_size=0):
-            self.buffer_sub.tpt.get_transform(self.parent, self.child, time.time())
+            tf = self.buffer_sub.tpt.get_transform(self.parent, self.child, time.time())
+            if prev is None:
+                self._input_data_asyncio(tf)
+                prev = tf
+                continue
+            identical = tf.almost_equal(prev, atol=1e-15)
+            # identical = np.all(tf.position == prev.position) and np.all(
+            #     tf.rotation.as_matrix == prev.rotation.as_matrix
+            # )
+            if identical:
+                continue
+            self._input_data_asyncio(tf)
+            prev = tf
 
     def close(self):
         self._loop_task.cancel()
@@ -126,54 +143,10 @@ class TfSub(afor.BaseSub[posetree.Transform]):
 
 
 async def async_main():
-    main_sub = GzSub(Pose_V, "/world/diff_drive/dynamic_pose/info")
-    reg = tp.PyRegistry()
-    tpt = TransformsPoseTree(reg)
-    try:
-        async for msg in main_sub.listen_reliable():
-            # print(msg)
-            for pero in msg.pose:
-                reg.add_transform(
-                    x=pero.position.x,
-                    y=pero.position.y,
-                    z=pero.position.z,
-                    qx=pero.orientation.x,
-                    qy=pero.orientation.y,
-                    qz=pero.orientation.z,
-                    qw=pero.orientation.w,
-                    timestamp=time.time_ns(),
-                    parent="world",
-                    child=pero.name,
-                )
-                reg.add_transform(
-                    x=pero.position.x,
-                    y=pero.position.y,
-                    z=pero.position.z,
-                    qx=pero.orientation.x,
-                    qy=pero.orientation.y,
-                    qz=pero.orientation.z,
-                    qw=pero.orientation.w,
-                    timestamp=(2**128 - 1),
-                    parent="world",
-                    child=pero.name,
-                )
-            pero = msg.pose[0]
-            trans = reg.get_transform(
-                "world",
-                pero.name,
-                timestamp=time.time_ns(),
-            )
-            try:
-                trans = tpt.get_transform(
-                    parent_frame="vehicle_blue",
-                    child_frame="vehicle_green",
-                    timestamp=time.time(),
-                )
-            except KeyError:
-                continue
-            print(trans)
-    finally:
-        main_sub.close()
+    main_sub = TfBufferSub("/world/diff_drive/dynamic_pose/info")
+    tf_sub = main_sub.subscribe_to_tf("vehicle_blue", "vehicle_green")
+    async for k in tf_sub.listen_reliable():
+        print(k)
 
 
 if __name__ == "__main__":
