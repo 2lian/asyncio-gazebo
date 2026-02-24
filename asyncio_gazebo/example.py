@@ -203,10 +203,17 @@ async def green_to_blue(tf_buffer_sub: TfBufferSub):
 
 
 async def async_main():
+    # Sub to get raw "Pose_V" data from gazebo transport
     raw_sub = GzSub(Pose_V, "/world/diff_drive/dynamic_pose/info")
+    # Sub to convert each payload to a list of transforms instead
+    # So this tf_stream is no longer specific to gazebo
     tf_stream: afor.BaseSub[List[TransformNode]] = afor.ConverterSub(
         raw_sub, lambda msg: [TransformNode.from_gz(k) for k in msg.pose]
     )
+    # Sub that also incorporates a buffer and graph of TF
+    # this sub has the .subscribe_to_tf(from, to) method. This will return a
+    # sub generatin the requested transform. The sub only trigger on updates to
+    # tf related to the requested transform.
     main_sub = TfBufferSub(tf_stream)
     try:
         async with asyncio.TaskGroup() as tg:
