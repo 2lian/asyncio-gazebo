@@ -1,12 +1,17 @@
 import asyncio
+import dataclasses
 import logging
 import time
 from contextlib import suppress
-from typing import List, Optional, TypeVar
+from pprint import pprint
+from typing import List, Optional, Self, Set, TypeVar
 
 import asyncio_for_robotics as afor
+import networkx
 import numpy as np
 import posetree
+import quaternion
+import spatialmath
 import transforms_py._core as tp
 from asyncio_for_robotics.core._logger import setup_logger
 from gz.msgs.clock_pb2 import Clock
@@ -17,6 +22,53 @@ _MsgType = TypeVar("_MsgType")
 
 setup_logger("./")
 logger = logging.getLogger(__name__)
+
+
+@dataclasses.dataclass
+class TransformNode:
+    name: str
+    tf: posetree.Transform = dataclasses.field(
+        default_factory=lambda *_: posetree.Transform.identity()
+    )
+    timestamp: int = 0
+    parent: str = "world"
+
+    @classmethod
+    def from_gz(cls, pose_gz) -> Self:
+        return cls(
+            name=pose_gz.name,
+            parent="world",
+            tf=posetree.Transform.from_position_and_quaternion(
+                [
+                    pose_gz.position.x,
+                    pose_gz.position.y,
+                    pose_gz.position.z,
+                ],
+                [
+                    pose_gz.orientation.x,
+                    pose_gz.orientation.y,
+                    pose_gz.orientation.z,
+                    pose_gz.orientation.w,
+                ],
+            ),
+            timestamp=time.time_ns(),
+        )
+
+    def to_transpy(
+        self,
+    ) -> tuple[float, float, float, float, float, float, float, int, str, str]:
+        return (
+            self.tf.x,
+            self.tf.y,
+            self.tf.z,
+            self.tf.rotation.as_quat()[0],  # x
+            self.tf.rotation.as_quat()[1],  # y
+            self.tf.rotation.as_quat()[2],  # z
+            self.tf.rotation.as_quat()[3],  # w
+            self.timestamp,
+            self.parent,
+            self.name,
+        )
 
 
 class TransformsPoseTree(posetree.CustomFramePoseTree):
@@ -51,8 +103,8 @@ class GzSub(afor.BaseSub[_MsgType]):
         topic: str,
         options: _transport.SubscribeOptions = _transport.SubscribeOptions(),
     ) -> None:
-        self.n = Node()
-        self.o = self.n.subscribe(msg_type, topic, self.input_data, options)
+        self._n = Node()
+        self._o = self._n.subscribe(msg_type, topic, self.input_data, options)
         self.msg_type = msg_type
         self.topic = topic
         super().__init__()
@@ -62,45 +114,28 @@ class GzSub(afor.BaseSub[_MsgType]):
         return f"GzSub-{self.topic}"
 
 
-class TfBufferSub(afor.BaseSub[List[str]]):
+class TfBufferSub(afor.BaseSub[List[TransformNode]]):
     _worlds_end = 2**128 - 1
 
-    def __init__(self, topic: str) -> None:
-        self.raw_sub = GzSub(Pose_V, topic)
+    def __init__(self, tf_raw_sub: afor.BaseSub[List[TransformNode]]) -> None:
+        self.raw_sub = tf_raw_sub
         self.reg = tp.PyRegistry()
         self.tpt = TransformsPoseTree(self.reg)
+        self.live_graph: networkx.Graph = networkx.Graph(name="TF graph")
         super().__init__()
 
         self._loop_task = asyncio.create_task(self._loop())
 
     async def _loop(self):
         async for msg in self.raw_sub.listen_reliable(queue_size=0):
-            for pero in msg.pose:
-                self.reg.add_transform(
-                    x=pero.position.x,
-                    y=pero.position.y,
-                    z=pero.position.z,
-                    qx=pero.orientation.x,
-                    qy=pero.orientation.y,
-                    qz=pero.orientation.z,
-                    qw=pero.orientation.w,
-                    timestamp=time.time_ns(),
-                    parent="world",
-                    child=pero.name,
-                )
-                self.reg.add_transform(
-                    x=pero.position.x,
-                    y=pero.position.y,
-                    z=pero.position.z,
-                    qx=pero.orientation.x,
-                    qy=pero.orientation.y,
-                    qz=pero.orientation.z,
-                    qw=pero.orientation.w,
-                    timestamp=self._worlds_end,
-                    parent="world",
-                    child=pero.name,
-                )
-            self._input_data_asyncio([p.name for p in msg.pose])
+            for pero in msg:
+                self.live_graph.add_edge(pero.parent, pero.name)
+                transpy = pero.to_transpy()
+                self.reg.add_transform(*transpy)
+                transpy = list(transpy)
+                transpy[7] = self._worlds_end
+                self.reg.add_transform(*transpy)
+            self._input_data_asyncio(msg)
 
     def close(self):
         self._loop_task.cancel()
@@ -120,21 +155,30 @@ class TfSub(afor.BaseSub[posetree.Transform]):
         self._loop_task = asyncio.create_task(self._loop())
 
     async def _loop(self):
-        prev = None
-        async for _ in self.buffer_sub.listen_reliable(queue_size=0):
+        path: Set[str] = set()
+        prev_graph = self.buffer_sub.live_graph.copy()
+        async for tfs in self.buffer_sub.listen_reliable(queue_size=0):
+            graph_update = False
+            if prev_graph.edges != self.buffer_sub.live_graph.edges:
+                prev_graph = self.buffer_sub.live_graph.copy()
+                graph_update = True
+            if graph_update or len(path) == 0:
+                try:
+                    path: Set[str] = set(
+                        networkx.shortest_path(
+                            self.buffer_sub.live_graph, self.parent, self.child
+                        )
+                    )
+                except networkx.NodeNotFound:
+                    continue
+                except networkx.NetworkXNoPath:
+                    continue
+            updated_tfs = {k.name for k in tfs}
+            update_on_path = len(updated_tfs & path) > 0
+            if not update_on_path:
+                continue
             tf = self.buffer_sub.tpt.get_transform(self.parent, self.child, time.time())
-            if prev is None:
-                self._input_data_asyncio(tf)
-                prev = tf
-                continue
-            identical = tf.almost_equal(prev, atol=1e-15)
-            # identical = np.all(tf.position == prev.position) and np.all(
-            #     tf.rotation.as_matrix == prev.rotation.as_matrix
-            # )
-            if identical:
-                continue
             self._input_data_asyncio(tf)
-            prev = tf
 
     def close(self):
         self._loop_task.cancel()
@@ -142,11 +186,34 @@ class TfSub(afor.BaseSub[posetree.Transform]):
         super().close()
 
 
-async def async_main():
-    main_sub = TfBufferSub("/world/diff_drive/dynamic_pose/info")
-    tf_sub = main_sub.subscribe_to_tf("vehicle_blue", "vehicle_green")
+async def world_to_blue(tf_buffer_sub: TfBufferSub):
+    tf_sub = tf_buffer_sub.subscribe_to_tf("world", "vehicle_blue")
     async for k in tf_sub.listen_reliable():
+        print(tf_sub.parent, " -> ", tf_sub.child)
         print(k)
+        print()
+
+
+async def green_to_blue(tf_buffer_sub: TfBufferSub):
+    tf_sub = tf_buffer_sub.subscribe_to_tf("vehicle_green", "vehicle_blue")
+    async for k in tf_sub.listen_reliable():
+        print(tf_sub.parent, " -> ", tf_sub.child)
+        print(k)
+        print()
+
+
+async def async_main():
+    raw_sub = GzSub(Pose_V, "/world/diff_drive/dynamic_pose/info")
+    tf_stream: afor.BaseSub[List[TransformNode]] = afor.ConverterSub(
+        raw_sub, lambda msg: [TransformNode.from_gz(k) for k in msg.pose]
+    )
+    main_sub = TfBufferSub(tf_stream)
+    try:
+        async with asyncio.TaskGroup() as tg:
+            tg.create_task(world_to_blue(main_sub))
+            tg.create_task(green_to_blue(main_sub))
+    finally:
+        main_sub.close()
 
 
 if __name__ == "__main__":
