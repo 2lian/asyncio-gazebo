@@ -1,10 +1,9 @@
 # Asyncio Gazebo
 
-Asyncio executor to interface with gazebo transport subscribers!
+Asyncio interface to gazebo transport subscribers!
+Based on `[asyncio_for_robotics](https://github.com/2lian/asyncio-for-robotics)`
 
-### Based on [Asyncio for Robotics](https://github.com/2lian/asyncio-for-robotics)
-
-# Code Sample
+### Code Sample
 
 This library is an [Asyncio for Robotics](https://github.com/2lian/asyncio-for-robotics) subscriber, for Gazebo transport. Refer to the detailed docs of *Asyncio for Robotics* to use the subscriber and asyncio.
 
