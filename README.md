@@ -1,7 +1,7 @@
 # Asyncio Gazebo
 
 Asyncio interface to gazebo transport subscribers!
-Based on `[asyncio_for_robotics](https://github.com/2lian/asyncio-for-robotics)`
+Based on [`asyncio_for_robotics`](https://github.com/2lian/asyncio-for-robotics)
 
 ### Code Sample
 
