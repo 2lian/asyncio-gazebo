@@ -25,7 +25,7 @@ async for msg in sub.listen_reliable():
 You need to [install Gazebo transport](https://gazebosim.org/api/transport/15/installation.html).
 
 ```bash
-pip install https://github.com/2lian/asyncio-gazebo
+pip install asyncio_gazebo
 ```
 
 ### [Example code](./asyncio_gazebo/example.py)

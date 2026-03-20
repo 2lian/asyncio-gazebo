@@ -361,6 +361,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-5.1.0-h8631160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom_headers-2.1.0-hb700be7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uriparser-0.9.8-hac33072_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.25.0-hd6090a7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.47-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -748,6 +749,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom-5.1.0-hcc88bc6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom_headers-2.1.0-hfefdfc9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uriparser-0.9.8-h0a1ffab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/wayland-1.25.0-h4f8a99f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x264-1!164.3095-h4e544f5_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2
@@ -1094,6 +1096,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom-5.1.0-h87f1bc4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom_headers-2.1.0-h06b67a2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/uriparser-0.9.8-h6aefe2f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x264-1!164.3095-h775f41a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/xerces-c-3.3.0-ha8d0d41_1.conda
@@ -1421,6 +1424,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom-5.1.0-h0fa9b28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom_headers-2.1.0-h4ddebb9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x264-1!164.3095-h57fd34a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h25f632f_1.conda
@@ -1701,6 +1705,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom-5.1.0-h37f4996_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom_headers-2.1.0-h49e36cd_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_34.conda
@@ -2077,6 +2082,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-5.1.0-h8631160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom_headers-2.1.0-hb700be7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uriparser-0.9.8-hac33072_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.25.0-hd6090a7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.47-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -2464,6 +2470,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom-5.1.0-hcc88bc6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom_headers-2.1.0-hfefdfc9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uriparser-0.9.8-h0a1ffab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/wayland-1.25.0-h4f8a99f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x264-1!164.3095-h4e544f5_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2
@@ -2810,6 +2817,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom-5.1.0-h87f1bc4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom_headers-2.1.0-h06b67a2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/uriparser-0.9.8-h6aefe2f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x264-1!164.3095-h775f41a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/xerces-c-3.3.0-ha8d0d41_1.conda
@@ -3137,6 +3145,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom-5.1.0-h0fa9b28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom_headers-2.1.0-h4ddebb9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x264-1!164.3095-h57fd34a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h25f632f_1.conda
@@ -3417,6 +3426,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom-5.1.0-h37f4996_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom_headers-2.1.0-h49e36cd_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_34.conda
@@ -3794,6 +3804,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-5.1.0-h8631160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom_headers-2.1.0-hb700be7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uriparser-0.9.8-hac33072_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.25.0-hd6090a7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.47-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -4180,6 +4191,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom-5.1.0-hcc88bc6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom_headers-2.1.0-hfefdfc9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uriparser-0.9.8-h0a1ffab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/wayland-1.25.0-h4f8a99f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x264-1!164.3095-h4e544f5_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2
@@ -4525,6 +4537,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom-5.1.0-h87f1bc4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom_headers-2.1.0-h06b67a2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/uriparser-0.9.8-h6aefe2f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x264-1!164.3095-h775f41a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/xerces-c-3.3.0-ha8d0d41_1.conda
@@ -4851,6 +4864,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom-5.1.0-h0fa9b28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom_headers-2.1.0-h4ddebb9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x264-1!164.3095-h57fd34a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h25f632f_1.conda
@@ -5130,6 +5144,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom-5.1.0-h37f4996_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom_headers-2.1.0-h49e36cd_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_34.conda
@@ -5506,6 +5521,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-5.1.0-h8631160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom_headers-2.1.0-hb700be7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uriparser-0.9.8-hac33072_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.25.0-hd6090a7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.47-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -5892,6 +5908,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom-5.1.0-hcc88bc6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom_headers-2.1.0-hfefdfc9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uriparser-0.9.8-h0a1ffab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/wayland-1.25.0-h4f8a99f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x264-1!164.3095-h4e544f5_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2
@@ -6237,6 +6254,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom-5.1.0-h87f1bc4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom_headers-2.1.0-h06b67a2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/uriparser-0.9.8-h6aefe2f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x264-1!164.3095-h775f41a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/xerces-c-3.3.0-ha8d0d41_1.conda
@@ -6563,6 +6581,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom-5.1.0-h0fa9b28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom_headers-2.1.0-h4ddebb9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x264-1!164.3095-h57fd34a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h25f632f_1.conda
@@ -6842,6 +6861,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom-5.1.0-h37f4996_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom_headers-2.1.0-h49e36cd_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_34.conda
@@ -7219,6 +7239,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-5.1.0-h8631160_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom_headers-2.1.0-hb700be7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uriparser-0.9.8-hac33072_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.25.0-hd6090a7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.47-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -7606,6 +7627,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom-5.1.0-hcc88bc6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/urdfdom_headers-2.1.0-hfefdfc9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uriparser-0.9.8-h0a1ffab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/wayland-1.25.0-h4f8a99f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x264-1!164.3095-h4e544f5_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2
@@ -7952,6 +7974,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom-5.1.0-h87f1bc4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/urdfdom_headers-2.1.0-h06b67a2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/uriparser-0.9.8-h6aefe2f_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x264-1!164.3095-h775f41a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/xerces-c-3.3.0-ha8d0d41_1.conda
@@ -8279,6 +8302,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom-5.1.0-h0fa9b28_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/urdfdom_headers-2.1.0-h4ddebb9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x264-1!164.3095-h57fd34a_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h25f632f_1.conda
@@ -8559,6 +8583,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom-5.1.0-h37f4996_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/urdfdom_headers-2.1.0-h49e36cd_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_34.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_34.conda
@@ -8859,10 +8884,10 @@ packages:
   requires_python: '>=3.10,<3.15'
 - pypi: ./
   name: asyncio-gazebo
-  version: 0.0.1
-  sha256: 0f8477bea0c26beb415be9426889f02de562c01fff55d387599840b10953edb5
+  version: 1.0.0
+  sha256: ab12a3231fcf30cafd85b1632ddd22e1754eb117ab5b4687b7e3b7f4640e4cf5
   requires_dist:
-  - asyncio-for-robotics>=1.3,<1.4
+  - asyncio-for-robotics>=1.3.5,<2
   requires_python: '>=3.10,<3.15'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/attr-2.5.2-hb03c661_1.conda
   sha256: 78c516af87437f52d883193cf167378f592ad445294c69f7c69f56059087c40d
@@ -33750,6 +33775,66 @@ packages:
   purls: []
   size: 49181
   timestamp: 1715010467661
+- conda: https://conda.anaconda.org/conda-forge/linux-64/uv-0.10.12-h0f56927_0.conda
+  sha256: 661365aa40ba423bfe2e6ab8e7b14190426d57f30097f3668f947a61c2a00c5c
+  md5: a44fb5a7475ba92b19bbd5bc3536af21
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  - libstdcxx >=14
+  constrains:
+  - __glibc >=2.17
+  license: Apache-2.0 OR MIT
+  purls: []
+  size: 18329542
+  timestamp: 1773971577988
+- conda: https://conda.anaconda.org/conda-forge/linux-aarch64/uv-0.10.12-he5ca43f_0.conda
+  sha256: 1b0f787d04636aa6a91777dc146954346f395ac3bbb89c0e3a82555189ae0c54
+  md5: f58671fcd96d761de3062a008869a82b
+  depends:
+  - libgcc >=14
+  - libstdcxx >=14
+  constrains:
+  - __glibc >=2.17
+  license: Apache-2.0 OR MIT
+  purls: []
+  size: 17866830
+  timestamp: 1773971573727
+- conda: https://conda.anaconda.org/conda-forge/osx-64/uv-0.10.12-hbc54fe3_0.conda
+  sha256: c0ccfd037e9a9d379310c269b838ffe93975e956d6926b43039360add7e3112e
+  md5: c1c34e4803200dd54e09246e4bd3348a
+  depends:
+  - libcxx >=19
+  - __osx >=11.0
+  constrains:
+  - __osx >=10.13
+  license: Apache-2.0 OR MIT
+  purls: []
+  size: 17340665
+  timestamp: 1773971729126
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/uv-0.10.12-h2a61971_0.conda
+  sha256: 86a8700cb7ea8a27461a18f72e89214fb0e7054263327d32d8c952bf0463a461
+  md5: 0a033f59f3d879371c557a5fe382906e
+  depends:
+  - __osx >=11.0
+  - libcxx >=19
+  constrains:
+  - __osx >=11.0
+  license: Apache-2.0 OR MIT
+  purls: []
+  size: 15964494
+  timestamp: 1773971696680
+- conda: https://conda.anaconda.org/conda-forge/win-64/uv-0.10.12-hd149a40_0.conda
+  sha256: a22260a89e2e39e9896b052d114962ba48ae2856f8c058d1e6c5ffdee2a4e700
+  md5: bf262ab308ac6f6d97a21bd6b82ff686
+  depends:
+  - vc >=14.3,<15
+  - vc14_runtime >=14.44.35208
+  - ucrt >=10.0.20348.0
+  license: Apache-2.0 OR MIT
+  purls: []
+  size: 18831719
+  timestamp: 1773971630073
 - conda: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_34.conda
   sha256: 9dc40c2610a6e6727d635c62cced5ef30b7b30123f5ef67d6139e23d21744b3a
   md5: 1e610f2416b6acdd231c5f573d754a0f

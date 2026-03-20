@@ -32,7 +32,7 @@ class Sub(afor.BaseSub[ProtoMsg]):
         self.msg_type: ProtoMsg = msg_type
         self.topic: str = topic
         self.options: _transport.SubscribeOptions = options
-        self._o = self._resolve_sub(
+        self._o: None = self._resolve_sub(
             self.msg_type, self.topic, self.options, self.session
         )
         super().__init__()
@@ -51,7 +51,7 @@ class Sub(afor.BaseSub[ProtoMsg]):
     def _gz_data_ingress(self, msg: ProtoMsg):
         if self._closed.is_set():
             return
-        success = self.input_data(msg)
+        self.input_data(msg)
 
     def _resolve_sub(
         self,
