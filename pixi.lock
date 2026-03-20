@@ -79,6 +79,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gettext-tools-0.25.1-h3f43e3d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glfw-3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gnutls-3.8.11-h18acefa_1.conda
@@ -477,6 +478,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gettext-tools-0.25.1-h5ad3122_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/giflib-5.2.2-h31becfc_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glfw-3.4-he30d5cf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.2.0-h124e036_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h0a1ffab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gnutls-3.8.11-hfe111f1_1.conda
@@ -860,6 +862,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gettext-tools-0.25.1-h3184127_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h10d778d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glfw-3.4-h8616949_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glslang-16.2.0-h37ef99c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-hf036a51_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.14-h21dd04a_2.conda
@@ -1188,6 +1191,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glfw-3.4-hc919400_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.2.0-h7cb4797_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-h7bae524_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
@@ -1512,6 +1516,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.5-h1f5b9c4_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/geos-3.14.1-hdade9fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glfw-3.4-hfd05255_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glslang-16.2.0-h294ba9c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.14-hac47afa_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/gz-cmake-5.0.2-h65371d8_0.conda
@@ -1801,6 +1806,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gettext-tools-0.25.1-h3f43e3d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glfw-3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gnutls-3.8.11-h18acefa_1.conda
@@ -2199,6 +2205,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gettext-tools-0.25.1-h5ad3122_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/giflib-5.2.2-h31becfc_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glfw-3.4-he30d5cf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.2.0-h124e036_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h0a1ffab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gnutls-3.8.11-hfe111f1_1.conda
@@ -2582,6 +2589,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gettext-tools-0.25.1-h3184127_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h10d778d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glfw-3.4-h8616949_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glslang-16.2.0-h37ef99c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-hf036a51_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.14-h21dd04a_2.conda
@@ -2910,6 +2918,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glfw-3.4-hc919400_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.2.0-h7cb4797_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-h7bae524_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
@@ -3234,6 +3243,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.5-h1f5b9c4_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/geos-3.14.1-hdade9fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glfw-3.4-hfd05255_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glslang-16.2.0-h294ba9c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.14-hac47afa_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/gz-cmake-5.0.2-h65371d8_0.conda
@@ -3523,6 +3533,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gettext-tools-0.25.1-h3f43e3d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glfw-3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gnutls-3.8.11-h18acefa_1.conda
@@ -3920,6 +3931,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gettext-tools-0.25.1-h5ad3122_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/giflib-5.2.2-h31becfc_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glfw-3.4-he30d5cf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.2.0-h124e036_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h0a1ffab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gnutls-3.8.11-hfe111f1_1.conda
@@ -4302,6 +4314,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gettext-tools-0.25.1-h3184127_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h10d778d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glfw-3.4-h8616949_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glslang-16.2.0-h37ef99c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-hf036a51_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.14-h21dd04a_2.conda
@@ -4629,6 +4642,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glfw-3.4-hc919400_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.2.0-h7cb4797_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-h7bae524_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
@@ -4952,6 +4966,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.5-h1f5b9c4_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/geos-3.14.1-hdade9fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glfw-3.4-hfd05255_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glslang-16.2.0-h294ba9c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.14-hac47afa_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/gz-cmake-5.0.2-h65371d8_0.conda
@@ -5240,6 +5255,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gettext-tools-0.25.1-h3f43e3d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glfw-3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gnutls-3.8.11-h18acefa_1.conda
@@ -5637,6 +5653,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gettext-tools-0.25.1-h5ad3122_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/giflib-5.2.2-h31becfc_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glfw-3.4-he30d5cf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.2.0-h124e036_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h0a1ffab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gnutls-3.8.11-hfe111f1_1.conda
@@ -6019,6 +6036,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gettext-tools-0.25.1-h3184127_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h10d778d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glfw-3.4-h8616949_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glslang-16.2.0-h37ef99c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-hf036a51_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.14-h21dd04a_2.conda
@@ -6346,6 +6364,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glfw-3.4-hc919400_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.2.0-h7cb4797_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-h7bae524_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
@@ -6669,6 +6688,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.5-h1f5b9c4_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/geos-3.14.1-hdade9fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glfw-3.4-hfd05255_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glslang-16.2.0-h294ba9c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.14-hac47afa_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/gz-cmake-5.0.2-h65371d8_0.conda
@@ -6957,6 +6977,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gettext-tools-0.25.1-h3f43e3d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glfw-3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gnutls-3.8.11-h18acefa_1.conda
@@ -7355,6 +7376,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gettext-tools-0.25.1-h5ad3122_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/giflib-5.2.2-h31becfc_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glfw-3.4-he30d5cf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.2.0-h124e036_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h0a1ffab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/gnutls-3.8.11-hfe111f1_1.conda
@@ -7738,6 +7760,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gettext-tools-0.25.1-h3184127_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h10d778d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glfw-3.4-h8616949_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/glslang-16.2.0-h37ef99c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-hf036a51_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.14-h21dd04a_2.conda
@@ -8066,6 +8089,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-h93a5062_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glfw-3.4-hc919400_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.2.0-h7cb4797_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-h7bae524_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
@@ -8390,6 +8414,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.5-h1f5b9c4_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/geos-3.14.1-hdade9fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glfw-3.4-hfd05255_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/glslang-16.2.0-h294ba9c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.14-hac47afa_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/gz-cmake-5.0.2-h65371d8_0.conda
@@ -13066,6 +13091,48 @@ packages:
   purls: []
   size: 119345
   timestamp: 1758809778618
+- conda: https://conda.anaconda.org/conda-forge/linux-64/glow-md-2.1.1-hfc2019e_0.conda
+  sha256: 03136685ca7a5a4f6ad97bfec913aaf95047975c03d0d17e1b68c488e5e238d0
+  md5: a38d632cfd74aa4f3c87ec332ac4b05f
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 5904741
+  timestamp: 1764194327649
+- conda: https://conda.anaconda.org/conda-forge/linux-aarch64/glow-md-2.1.1-h22914b5_0.conda
+  sha256: 982f2b259ebae42dc6c4ef122abe4e325790f567314aaacde87efc761e3d95ed
+  md5: cbdcc5e250fecd334bc0591fc8010c58
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 5326740
+  timestamp: 1764194387024
+- conda: https://conda.anaconda.org/conda-forge/osx-64/glow-md-2.1.1-hccc6df8_0.conda
+  sha256: 538cba3ad9dabc13c6a179926e126209143a710c995c351e815791543bdc1024
+  md5: c815c5bbfeb26dcb85f0a650822d9ab2
+  constrains:
+  - __osx >=10.12
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 5940003
+  timestamp: 1764194354797
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/glow-md-2.1.1-h820172f_0.conda
+  sha256: 04fe402dcb54a36ad6b944c6222b3447fa103b1497cea4676f57f0213c8139ea
+  md5: a3a6602a8e7d5d271902ebcdbdbef38c
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 5373428
+  timestamp: 1764194361796
+- conda: https://conda.anaconda.org/conda-forge/win-64/glow-md-2.1.1-h11686cb_0.conda
+  sha256: b802cb0158ff252e0e7fa6c8d1733d422bdb4d596b07c95c1244f9ca070a9e9d
+  md5: 9f4259b9ebefb858b00b0939860bd2da
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 5840850
+  timestamp: 1764194361874
 - conda: https://conda.anaconda.org/conda-forge/linux-64/glslang-16.2.0-h96af755_1.conda
   sha256: 88a5ad3571948bde22957d08ab01328b8a7eb04fdee66268b3125cc322dbde8b
   md5: ba5b655d827f263090ad2dc514810328
