@@ -2,7 +2,7 @@
 authors = ["Neppel Elian <elian.neppel@posteo.eu>"]
 channels = ["conda-forge"]
 name = "asyncio-gazebo"
-platforms = ["linux-64"]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64",]
 version = "0.1.0"
 
 [tasks]
@@ -13,7 +13,7 @@ move = "pixi run gz topic -t '/model/vehicle_blue/cmd_vel' -m gz.msgs.Twist -p '
 
 [dependencies]
 gz-jetty = ">=1.0.0,<2"
-python = ">=3.10,<3.14"
+python = ">=3.10.0,<3.14"
 gz-transport = ">=15.0.2,<16"
 gz-transport-python = ">=15.0.2,<16"
 pytest = ">=9.0.2,<10"
@@ -29,17 +29,21 @@ py312 = {features = ["py312"]}
 py313 = {features = ["py313"]}
 # py314 = {features = ["py314"]} # gazebo not compatible
 
-[feature.py310.dependencies]
-python = "==3.10"
+[feature.py310]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64",]
+dependencies = {python = "3.10.*"}
 
-[feature.py311.dependencies]
-python = "==3.11"
+[feature.py311]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64",]
+dependencies = {python = "3.11.*"}
 
-[feature.py312.dependencies]
-python = "==3.12"
+[feature.py312]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64",]
+dependencies = {python = "3.12.*"}
 
-[feature.py313.dependencies]
-python = "==3.13"
+[feature.py313]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64",]
+dependencies = {python = "3.13.*"}
 
 # [feature.py314.dependencies]
 # python = "==3.14"
