@@ -1,4 +1,4 @@
-name: Python - crossplatform
+name: Python
 
 on:
   push:
