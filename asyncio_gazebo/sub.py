@@ -48,6 +48,11 @@ class Sub(afor.BaseSub[ProtoMsg]):
         """
         return auto_session(session)
 
+    def _gz_data_ingress(self, msg: ProtoMsg):
+        if self._closed.is_set():
+            return
+        success = self.input_data(msg)
+
     def _resolve_sub(
         self,
         msg_type: ProtoMsg,
@@ -59,4 +64,10 @@ class Sub(afor.BaseSub[ProtoMsg]):
 
         Usefull to overide in a child class and change the Subscription behavior.
         """
-        return session.subscribe(msg_type, topic, self.input_data, options)
+        return session.subscribe(msg_type, topic, self._gz_data_ingress, options)
+
+    def close(self):
+        if self._closed.is_set():
+            return
+        del self._o
+        return super().close()
